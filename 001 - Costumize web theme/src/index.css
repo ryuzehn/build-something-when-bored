@@ -1,0 +1,140 @@
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #fafafb;
+  --text-color: #455560;
+  --text-white: #fff;
+  --primary-color: #E5890A;
+  --secondary-color: #FFBF86;
+
+  --primary-bg-light: #ffffff;
+  --secondary-bg-light: #fafafb;
+  --text-color-light: #455560;
+  --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  --primary-bg-dark: #2d2d2d;
+  --secondary-bg-dark: #202020;
+  --text-color-dark: #bbbbbb;
+  --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+  --primary-color-cozy: #E5890A;
+  --secondary-color-cozy: #FFBF86;
+
+  --primary-color-cold: #349eff;
+  --second-color-cold: #62b4ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+[class*="col-"] {
+    padding: 0 15px;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.message-box {
+  width: 300px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-bottom: 100px;
+  background-color: var(--primary-color);
+}
+
+h1 {
+  margin: 50px 0;
+  color: var(--text-color)
+}
+
+h3 {
+  color: var(--text-white);
+}
+
+p {
+  color: var(--text-color);
+}
+
+.theme-button {
+  padding: 15px 20px;
+}
+
+.btn-theme {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #455560;
+  border-radius: 13.5px;
+  background-color: #FED2AA;
+}
+
+.btn-theme:hover {
+  cursor: pointer;
+}
+
+.cozy-color {
+  background-color: var(--primary-color-cozy);
+}
+
+.cold-color {
+  background-color: var(--primary-color-cold);
+}
+
+.light-background {
+  background-color: var(--primary-bg-light);
+}
+
+.dark-background {
+  background-color: var(--primary-bg-dark);
+}

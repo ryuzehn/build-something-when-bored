@@ -1,0 +1,21 @@
+.theme-mode-light {
+  --primary-bg: var(--primary-bg-light);
+  --secondary-bg: var(--secondary-bg-light);
+  --text-color: var(--text-color-light);
+}
+
+.theme-mode-dark {
+  --primary-bg: var(--primary-bg-dark);
+  --secondary-bg: var(--secondary-bg-dark);
+  --text-color: var(--text-color-dark);
+}
+
+.theme-color-cozy {
+  --primary-color: var(--primary-color-cozy);
+  --secondary-color: var(--secondary-color-cozy);
+}
+
+.theme-color-cold {
+  --primary-color: var(--primary-color-cold);
+  --secondary-color: var(--secondary-color-cold);
+}
